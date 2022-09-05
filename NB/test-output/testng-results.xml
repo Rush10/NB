@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-05T19:54:31 ICT" name="Computer Test" finished-at="2022-09-05T19:54:32 ICT" duration-ms="175">
+    <groups>
+    </groups>
+    <test started-at="2022-09-05T19:54:31 ICT" name="Computer Spec Test" finished-at="2022-09-05T19:54:31 ICT" duration-ms="64">
+      <class name="latihantest.testing.ComputerSpecTest1">
+        <test-method signature="RAMTest(java.lang.String)[pri:0, instance:latihantest.testing.ComputerSpecTest1@212b5695]" started-at="2022-09-05T19:54:31 ICT" name="RAMTest" finished-at="2022-09-05T19:54:31 ICT" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pak Kabul]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RAMTest -->
+        <test-method signature="StorageTest(java.lang.String)[pri:0, instance:latihantest.testing.ComputerSpecTest1@212b5695]" started-at="2022-09-05T19:54:31 ICT" name="StorageTest" finished-at="2022-09-05T19:54:31 ICT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pak Kabul]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StorageTest -->
+      </class> <!-- latihantest.testing.ComputerSpecTest1 -->
+      <class name="latihantest.testing.ComputerSpecTest2">
+        <test-method signature="OSTest(java.lang.String)[pri:0, instance:latihantest.testing.ComputerSpecTest2@14555e0a]" started-at="2022-09-05T19:54:31 ICT" name="OSTest" finished-at="2022-09-05T19:54:31 ICT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pak Kabul]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OSTest -->
+        <test-method signature="browserTest(java.lang.String)[pri:0, instance:latihantest.testing.ComputerSpecTest2@14555e0a]" started-at="2022-09-05T19:54:31 ICT" name="browserTest" finished-at="2022-09-05T19:54:31 ICT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pak Kabul]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTest -->
+      </class> <!-- latihantest.testing.ComputerSpecTest2 -->
+    </test> <!-- Computer Spec Test -->
+    <test started-at="2022-09-05T19:54:32 ICT" name="NetworkTest" finished-at="2022-09-05T19:54:32 ICT" duration-ms="9">
+      <class name="latihantest.testing.NetworkTest">
+        <test-method signature="browserTest(java.lang.String,java.lang.String)[pri:0, instance:latihantest.testing.NetworkTest@6fd83fc1]" started-at="2022-09-05T19:54:32 ICT" name="browserTest" finished-at="2022-09-05T19:54:32 ICT" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pak Kabul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.stafaband.info]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTest -->
+      </class> <!-- latihantest.testing.NetworkTest -->
+    </test> <!-- NetworkTest -->
+  </suite> <!-- Computer Test -->
+</testng-results>

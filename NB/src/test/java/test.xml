@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ERentenir Test">
+	<test name="Rentenir Flow Test">
+		<groups>
+			<run>
+				<include name="log.*" />
+			</run>
+			
+			<!--
+			<define name="all method">
+				<include name="flow rentenir"/>
+				<include name="flow peminjam"/>
+			</define>
+			<run>
+				<include name="all method"/>
+			</run>
+			-->
+			
+			<!-- 
+			<include name="flow rentenir"/>
+			<exclude name="flow peminjam" /> 
+			-->
+		</groups>
+		<classes>
+			<class name="latihantest.testing.ERentenirAPITest" />
+			<class name="latihantest.testing.ERentenirWebTest" />
+		</classes>
+	</test>
+</suite>
+

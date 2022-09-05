@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Computer Test">
+	<parameter name="pemilik" value="Pak Kabul"/>
+	<test name="Computer Spec Test">
+		<classes>
+			<class name="latihantest.testing.ComputerSpecTest1" />
+			<class name="latihantest.testing.ComputerSpecTest2" />
+		</classes>
+	</test>
+	<test name="NetworkTest">
+		<parameter name="alamat" value="www.stafaband.info"/>
+		<classes>
+			<class name="latihantest.testing.NetworkTest" />
+		</classes>
+	</test>
+</suite>
+
