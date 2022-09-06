@@ -16,65 +16,54 @@ import latihan.training.SortAlgorithm;
 
 public class TestSortAlgoDynamic {
 
-	int [] intNext ;
-	Random rand ;
+	int[] intNext;
+	String strNext;
+	Random rand;
 	int indexAwal;
 	int indexAkhir;
 	int jumlahData;
 	SortAlgorithm sA;
-	int loopAfter=1;
-	int loopBefore=1;
+	int loopMethod;
 	
 	
 	@BeforeTest
 	public void befTest()
 	{
-		System.out.println("TEST DIMULAI ");
+//		System.out.println("TEST DIMULAI ");
 		sA = new SortAlgorithm();
-		rand = new Random();		
+		rand = new Random();
+		loopMethod = 0;
+		strNext = "";
 	}
 	
 	@BeforeClass
 	public void befClass()
 	{
-		System.out.println("ini adalah BEFORE CLASS");
+		System.out.println("=========================== SORT TEST ===========================");
 	}
 	
 	@BeforeMethod
 	public void befMethod()
 	{
-		System.out.println("ini adalah before method yang ke - "+loopBefore);
+		loopMethod++;
+		System.out.println("===================== AWAL TEST METHOD "+loopMethod+" (SO) ===================");
 		jumlahData = rand.nextInt(5,20);
 		intNext = new int[jumlahData];
-		loopBefore++;
 	}
-	
-	@Test
-	public void testPertama()
-	{
-//		String randjgD = Integer.toString(rand.nextInt(charBatasBawahLowerAlphabeth,charBatasAtasLowerAlphabeth));
-//		int randjgI = (int)rand.nextInt(charBatasBawahLowerAlphabeth,charBatasAtasLowerAlphabeth);
-		System.out.println("ini adalah TEST CASE yang ke - 1");
-		indexAwal = 0;
-		indexAkhir = 100;
-		
-		for(int i=0;i<jumlahData;i++)
-		{
-			intNext[i] = rand.nextInt(indexAwal,indexAkhir);
-		}
-			;		
-	} 
 	
 	@Test
 	public void testKedua()
 	{
-		System.out.println("ini adalah TEST CASE yang ke - 2");
+		System.out.println("======================= Execute Test Sort =======================");
 		indexAwal = 1000;
 		indexAkhir = 10000;
 		for(int i=0;i<jumlahData;i++)
 		{
 			intNext[i] = rand.nextInt(indexAwal,indexAkhir);
+			strNext += Integer.toString(intNext[i])+",";
 		}
+		strNext = strNext.substring(0,strNext.length()-1);
+		System.out.println(strNext + " --> Before Sorting");
 		assertEquals(sA.selectionSortASCInt(intNext),sA.bubbleSortASCInt(intNext)," KEDUA DATA TIDAK COCOK ");	
 	} 
 	
@@ -83,19 +72,18 @@ public class TestSortAlgoDynamic {
 	@AfterMethod
 	public void aftMethod()
 	{
-		System.out.println("ini adalah after method yang ke - "+loopAfter);
-		loopAfter++;
+		System.out.println("==================== AKHIR TEST METHOD "+loopMethod+" (SO) ===================");
 	}
 	
 	@AfterClass
 	public void aftClass()
 	{
-		System.out.println("ini adalah AFTER CLASS");
+//		System.out.println("ini adalah AFTER CLASS");
 	}
 	
 	@AfterTest
 	public void aftTest()
 	{
-		System.out.println("TEST SUDAH SELESAI DILAKUKAN !! ");
+//		System.out.println("TEST SUDAH SELESAI DILAKUKAN !! ");
 	}
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UjianDuaSuite4">
+  <test thread-count="5" name="UjianDuaTest4">
+    <classes>
+      <class name="ujiantest.kedua.StringToNumericTest"/>
+      <class name="ujiantest.kedua.GeometriTest"/>
+      <class name="latihantest.training.TestSortAlgoDynamic"/>
+    </classes>
+  </test> <!-- UjianDuaTest -->
+</suite> <!-- UjianDuaSuite -->

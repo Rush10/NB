@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="latihantest.training.TestCalculator">
+      <class name="latihantest.training.TestSortAlgoDynamic">
         <methods>
-          <include name="devide"/>
+          <include name="befTest"/>
+          <include name="aftMethod"/>
+          <include name="aftClass"/>
+          <include name="aftTest"/>
+          <include name="befClass"/>
+          <include name="befMethod"/>
+          <include name="testKedua"/>
         </methods>
-      </class> <!-- latihantest.training.TestCalculator -->
+      </class> <!-- latihantest.training.TestSortAlgoDynamic -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
