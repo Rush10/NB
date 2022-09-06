@@ -1,34 +1,28 @@
 package ujiantest.kedua;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import java.util.Random;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import ujian.kedua.StringToNumeric;
 
-//Urutan Jenjang
-//(1) ===+
-//(2) ===
-//(3) ==
-//(4) =
-
 public class StringToNumericTest {
 	StringToNumeric stm;
 	Random rand;
-	int n, intLowerLimit, intUpperLimit;
+	int n, intLowerLimit, intUpperLimit, intMethod;
 	String word;
 	
 	@BeforeTest
 	public void beforeTest() {
-		System.out.println("===+ TEST STRING TO NUMERIC +===");
-		System.out.println("=== Execute Before Test ===");
-		
 		stm = new StringToNumeric();
 		rand = new Random();
 		
@@ -37,30 +31,36 @@ public class StringToNumericTest {
 		intUpperLimit = 11; //change here
 	}
 	
+	@BeforeClass
+	public void beforeClass() {
+		System.out.println("===================== TEST STRING TO NUMERIC ====================");
+	}
+	
 	@BeforeMethod
 	public void beforeMethod() {
-		System.out.println("== Execute Before Method ==");
+		intMethod++;
+		System.out.println("===================== AWAL TEST METHOD "+intMethod+" (S) ====================");
 		
 		n = rand.nextInt(intLowerLimit,intUpperLimit);
 		word = stm.randomString(n);
 		
-		System.out.println("Word : " + word);
 	}
 	
 	@Test
 	public void testDevide() {
-		System.out.println("= Execute Test Devide =");
+		System.out.println("=================== Execute String to Numeric ===================");
+		System.out.println("Word : " + word);
 		
-		assertEquals(stm.convertStringToNumericActual(word), stm.convertStringToNumericExpected(word));
+		AssertJUnit.assertEquals(stm.convertStringToNumericActual(word), stm.convertStringToNumericExpected(word));
 	}
 	
 	@AfterMethod
 	public void afterMethod() {
-		System.out.println("== Execute After Method ==");
+		System.out.println("==================== AKHIR TEST METHOD "+intMethod+" (S) ====================");
 	}
 	
 	@AfterTest
 	public void afterTest() {
-		System.out.println("=== Execute After Test ===");
+//		System.out.println("=== Execute After Test ===");
 	}
 }

@@ -51,13 +51,13 @@ public class StringToNumeric {
 	
 	public String randomString(int n) {
 		int randAlphabeth = 0;
-		final char charBatasBawahLowerAlphabeth = 97;
-		final char charBatasAtasLowerAlphabeth = 123;
+		final char charBatasBawahAlphabeth = 97;
+		final char charBatasAtasAlphabeth = 123;
 		Random rand = new Random();
 		String strRandomString = "";
 		
 		for (int i = 0; i < n; i++) {
-			randAlphabeth = rand.nextInt(charBatasBawahLowerAlphabeth,charBatasAtasLowerAlphabeth);
+			randAlphabeth = rand.nextInt(charBatasBawahAlphabeth,charBatasAtasAlphabeth);
 			strRandomString += (char)randAlphabeth;
 		}
 		
