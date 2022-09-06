@@ -47,7 +47,8 @@ public class MatematikaTest {
 	@Test(priority = 3)
 	public void testDevide() {
 		System.out.println("====================== Execute Test Devide ======================");
-		
+		System.out.println("Nilai A : " + intA);
+		System.out.println("Nilai B : " + intB);
 		AssertJUnit.assertEquals(math.devideActual(intA, intB), math.devideExpect(intA, intB));
 	}
 	

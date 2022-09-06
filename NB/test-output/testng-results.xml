@@ -2,148 +2,148 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-06T11:38:07 ICT" name="UjianDuaSuite" finished-at="2022-09-06T11:38:07 ICT" duration-ms="124">
+  <suite started-at="2022-09-06T12:40:29 ICT" name="UjianDuaSuite3" finished-at="2022-09-06T12:40:29 ICT" duration-ms="93">
     <groups>
     </groups>
-    <test started-at="2022-09-06T11:38:07 ICT" name="UjianDuaTest" finished-at="2022-09-06T11:38:07 ICT" duration-ms="124">
+    <test started-at="2022-09-06T12:40:29 ICT" name="UjianDuaTest3" finished-at="2022-09-06T12:40:29 ICT" duration-ms="93">
       <class name="ujiantest.kedua.StringToNumericTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3f6b0be5]" started-at="2022-09-06T11:38:07 ICT" name="beforeTest" finished-at="2022-09-06T11:38:07 ICT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3b6ddd1d]" started-at="2022-09-06T12:40:29 ICT" name="beforeTest" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3f6b0be5]" started-at="2022-09-06T11:38:07 ICT" name="beforeClass" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3b6ddd1d]" started-at="2022-09-06T12:40:29 ICT" name="beforeClass" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3f6b0be5]" started-at="2022-09-06T11:38:07 ICT" name="beforeMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3b6ddd1d]" started-at="2022-09-06T12:40:29 ICT" name="beforeMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testDevide()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3f6b0be5]" started-at="2022-09-06T11:38:07 ICT" name="testDevide" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method signature="testDevide()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3b6ddd1d]" started-at="2022-09-06T12:40:29 ICT" name="testDevide" finished-at="2022-09-06T12:40:29 ICT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDevide -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3f6b0be5]" started-at="2022-09-06T11:38:07 ICT" name="afterMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3b6ddd1d]" started-at="2022-09-06T12:40:29 ICT" name="afterMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3f6b0be5]" started-at="2022-09-06T11:38:07 ICT" name="afterTest" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ujiantest.kedua.StringToNumericTest@3b6ddd1d]" started-at="2022-09-06T12:40:29 ICT" name="afterTest" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- ujiantest.kedua.StringToNumericTest -->
       <class name="ujiantest.kedua.MatematikaTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="beforeTest" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="beforeTest" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="beforeClass" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="beforeClass" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="beforeMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="beforeMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testSum()[pri:1, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="testSum" finished-at="2022-09-06T11:38:07 ICT" duration-ms="2" status="PASS">
+        <test-method signature="testSum()[pri:1, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="testSum" finished-at="2022-09-06T12:40:29 ICT" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSum -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="afterMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="afterMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="beforeMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="beforeMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testSubtract()[pri:2, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="testSubtract" finished-at="2022-09-06T11:38:07 ICT" duration-ms="2" status="PASS">
+        <test-method signature="testSubtract()[pri:2, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="testSubtract" finished-at="2022-09-06T12:40:29 ICT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSubtract -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="afterMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="afterMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="testDevide()[pri:3, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="testDevide" finished-at="2022-09-06T11:38:07 ICT" duration-ms="2" status="PASS">
+        <test-method signature="testDevide()[pri:3, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="testDevide" finished-at="2022-09-06T12:40:29 ICT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDevide -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="beforeMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="beforeMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="afterMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="afterMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="testMod()[pri:4, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="testMod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="beforeMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testMod()[pri:4, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="testMod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="beforeMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="afterMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="afterMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:ujiantest.kedua.MatematikaTest@3b6ddd1d]" started-at="2022-09-06T11:38:07 ICT" name="afterTest" finished-at="2022-09-06T11:38:07 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ujiantest.kedua.MatematikaTest@4229bb3f]" started-at="2022-09-06T12:40:29 ICT" name="afterTest" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- ujiantest.kedua.MatematikaTest -->
       <class name="ujiantest.kedua.GeometriTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="beforeTest" finished-at="2022-09-06T11:38:07 ICT" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="beforeTest" finished-at="2022-09-06T12:40:29 ICT" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="beforeClass" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="beforeClass" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="beforeMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="beforeMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testLuasPersegi()[pri:1, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="testLuasPersegi" finished-at="2022-09-06T11:38:07 ICT" duration-ms="8" status="PASS">
+        <test-method signature="testLuasPersegi()[pri:1, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="testLuasPersegi" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLuasPersegi -->
-        <test-method is-config="true" signature="aftermethod()[pri:0, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="aftermethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="aftermethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method signature="testLuasSegitiga()[pri:2, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="testLuasSegitiga" finished-at="2022-09-06T11:38:07 ICT" duration-ms="3" status="PASS">
+        <test-method signature="testLuasSegitiga()[pri:2, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="testLuasSegitiga" finished-at="2022-09-06T12:40:29 ICT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLuasSegitiga -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="beforeMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="beforeMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="aftermethod()[pri:0, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="aftermethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="aftermethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="beforeMethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testLuasTrapesium()[pri:3, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="testLuasTrapesium" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method signature="testLuasTrapesium()[pri:3, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="testLuasTrapesium" finished-at="2022-09-06T12:40:29 ICT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLuasTrapesium -->
-        <test-method is-config="true" signature="aftermethod()[pri:0, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="aftermethod" finished-at="2022-09-06T11:38:07 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="beforeMethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="aftermethod" finished-at="2022-09-06T12:40:29 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:ujiantest.kedua.GeometriTest@4229bb3f]" started-at="2022-09-06T11:38:07 ICT" name="afterTest" finished-at="2022-09-06T11:38:07 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ujiantest.kedua.GeometriTest@3f6b0be5]" started-at="2022-09-06T12:40:29 ICT" name="afterTest" finished-at="2022-09-06T12:40:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- ujiantest.kedua.GeometriTest -->
-    </test> <!-- UjianDuaTest -->
-  </suite> <!-- UjianDuaSuite -->
+    </test> <!-- UjianDuaTest3 -->
+  </suite> <!-- UjianDuaSuite3 -->
 </testng-results>
