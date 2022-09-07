@@ -1,4 +1,4 @@
-package latihan.training.oop.enkapsulasi;
+package latihan.oop.enkapsulasi;
 
 public class B {
 	public static void main(String[] args) {

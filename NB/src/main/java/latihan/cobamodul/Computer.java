@@ -1,4 +1,4 @@
-package latihan.testing;
+package latihan.cobamodul;
 
 import java.util.ArrayList;
 import java.util.List;

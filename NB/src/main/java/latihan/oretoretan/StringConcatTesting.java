@@ -1,4 +1,4 @@
-	package latihan.training;
+	package latihan.oretoretan;
 
 //import java.util.Iterator;
 

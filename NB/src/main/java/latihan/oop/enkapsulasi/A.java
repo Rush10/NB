@@ -1,4 +1,4 @@
-package latihan.training.oop.enkapsulasi;
+package latihan.oop.enkapsulasi;
 
 public class A {
 	private int a;

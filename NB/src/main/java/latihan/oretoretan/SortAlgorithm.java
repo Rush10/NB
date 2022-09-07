@@ -1,4 +1,4 @@
-package latihan.training;
+package latihan.oretoretan;
 
 public class SortAlgorithm {
 	StringBuilder sBuild = new StringBuilder();

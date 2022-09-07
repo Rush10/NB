@@ -4,7 +4,7 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import latihan.training.ShoopingActivity;
+import latihan.oretoretan.ShoopingActivity;
 
 public class TestShopping {
 

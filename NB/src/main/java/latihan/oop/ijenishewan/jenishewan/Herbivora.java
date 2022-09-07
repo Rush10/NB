@@ -1,6 +1,6 @@
-package latihan.training.oop.ijenishewan.jenishewan;
+package latihan.oop.ijenishewan.jenishewan;
 
-import latihan.training.oop.ijenishewan.IHerbivora;
+import latihan.oop.ijenishewan.IHerbivora;
 
 public class Herbivora implements IHerbivora{
 	

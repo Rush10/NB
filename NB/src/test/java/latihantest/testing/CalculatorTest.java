@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import latihan.testing.Calculator;
+import latihan.cobamodul.Calculator;
 
 public class CalculatorTest {
 

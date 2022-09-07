@@ -1,4 +1,4 @@
-package latihan.training.oop.ijenishewan;
+package latihan.oop.ijenishewan;
 
 public interface IKarnivora {
 	public void jenisGigiKarnivoraFunc(String jg);

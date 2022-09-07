@@ -5,7 +5,7 @@ import static org.testng.Assert.*;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import latihan.testing.Computer;
+import latihan.cobamodul.Computer;
 
 public class ComputerSpecTest1 {
 	@Test @Parameters("pemilik")

@@ -1,4 +1,4 @@
-package latihan.training;
+package latihan.oretoretan;
 
 public class Car{
 	String bahanBakar; //harus diberikan private agar tidak bisa diakses utk menciptakan enkapsulasi

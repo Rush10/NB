@@ -1,4 +1,4 @@
-package latihan.training.oop.inheritancepoli;
+package latihan.oop.inheritancepoli;
 
 public class A{
 	void func(){ 

@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import latihan.training.SortAlgorithm;
+import latihan.oretoretan.SortAlgorithm;
 
 public class TestSortAlgoDynamic {
 

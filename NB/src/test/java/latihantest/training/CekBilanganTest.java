@@ -7,7 +7,7 @@ import java.util.Random;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import latihan.training.CekBilangan;
+import latihan.oretoretan.CekBilangan;
 
 public class CekBilanganTest {
 	CekBilangan cb;

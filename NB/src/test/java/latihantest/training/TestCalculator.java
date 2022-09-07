@@ -3,7 +3,7 @@ package latihantest.training;
 import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
 
-import latihan.training.Calculator;
+import latihan.oretoretan.Calculator;
 
 public class TestCalculator {
 	
