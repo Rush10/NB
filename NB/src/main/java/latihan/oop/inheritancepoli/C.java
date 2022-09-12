@@ -5,6 +5,6 @@ public class C{
 		B var = new B();
 		var.func();
 		
-		var.func1(); 
+//		var.func1(); 
 	}
 }

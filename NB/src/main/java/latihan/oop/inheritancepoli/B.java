@@ -6,7 +6,7 @@ public class B extends A{
 	@Override
 	void func() {
 		// TODO Auto-generated method stub
-//		super.func();
+		super.func();
 		System.out.println("Coba B");
 	}
 }
