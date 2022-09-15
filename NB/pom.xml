@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <dependencies>
+  	<!-- testng -->
   	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 	<dependency>
 	    <groupId>org.testng</groupId>
@@ -12,6 +13,8 @@
 	    <version>7.6.1</version>
 	    <scope>test</scope>
 	</dependency>
+	
+	<!-- untuk restassured -->
 	<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 	<dependency>
 	    <groupId>io.rest-assured</groupId>
@@ -36,6 +39,24 @@
 	    <groupId>org.apache.poi</groupId>
 	    <artifactId>poi-ooxml</artifactId>
 	    <version>5.2.2</version>
+	</dependency>
+	
+	<!-- untuk selenium -->
+	<dependency>
+	    <groupId>io.github.bonigarcia</groupId>
+	    <artifactId>webdrivermanager</artifactId>
+	    <version>5.1.0</version>
+	</dependency>
+	<dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>31.0.1-jre</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>3.141.59</version>
 	</dependency>
   </dependencies>
   
