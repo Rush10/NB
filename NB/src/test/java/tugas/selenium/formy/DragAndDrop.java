@@ -4,6 +4,7 @@ import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
 
+import org.openqa.selenium.interactions.Actions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static org.testng.Assert.*;
@@ -27,18 +28,14 @@ public class DragAndDrop {
 
   @Test
   public void testDragAndDrop() throws Exception {
-    driver.get("https://formy-project.herokuapp.com/dragdrop");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Complete Web Form'])[1]/following::h1[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Complete Web Form'])[1]/following::h1[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Complete Web Form'])[1]/following::h1[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Complete Web Form'])[1]/following::h1[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Complete Web Form'])[1]/following::h1[1]")).click();
+	driver.get("https://formy-project.herokuapp.com/dragdrop");
+	Actions a = new Actions(driver);
+	 
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Complete Web Form'])[1]/following::h1[1]")).click();
     driver.findElement(By.id("box")).click();
     driver.findElement(By.xpath("//img[@alt='Selenium logo']")).click();
+    a.dragAndDrop(driver.findElement(By.xpath("//img[@alt='Selenium logo']")), driver.findElement(By.id("box"))).build().perform();
     driver.findElement(By.xpath("//*/text()[normalize-space(.)='']/parent::*")).click();
-    driver.findElement(By.xpath("//*/text()[normalize-space(.)='']/parent::*")).click();
-    driver.findElement(By.xpath("//img[@alt='Selenium logo']")).click();
   }
 
   @AfterClass(alwaysRun = true)

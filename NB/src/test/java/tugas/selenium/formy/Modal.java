@@ -20,9 +20,9 @@ public class Modal {
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
 	WebDriverManager.firefoxdriver().setup();
-    driver = new FirefoxDriver();
+	driver = new FirefoxDriver();
     baseUrl = "https://www.google.com/";
-    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
   @Test
@@ -30,19 +30,21 @@ public class Modal {
     driver.get("https://formy-project.herokuapp.com/modal");
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Complete Web Form'])[1]/following::h1[1]")).click();
     driver.findElement(By.id("modal-button")).click();
+    Thread.sleep(500);
     driver.findElement(By.id("exampleModalLabel")).click();
-    driver.findElement(By.id("exampleModalLabel")).click();
-    driver.findElement(By.xpath("//div[@id='exampleModal']/div/div/div[2]")).click();
-    driver.findElement(By.xpath("//div[@id='exampleModal']/div/div/div[2]")).click();
     driver.findElement(By.xpath("//div[@id='exampleModal']/div/div/div[2]")).click();
     driver.findElement(By.xpath("//div[@id='exampleModal']/div/div/div/button/span")).click();
+    Thread.sleep(500);
     driver.findElement(By.id("modal-button")).click();
+    Thread.sleep(500);
     driver.findElement(By.id("close-button")).click();
+    Thread.sleep(500);
     driver.findElement(By.id("modal-button")).click();
+    Thread.sleep(500);
     driver.findElement(By.id("ok-button")).click();
-    driver.findElement(By.xpath("//div[@id='exampleModal']/div/div/div[3]")).click();
-    driver.findElement(By.id("ok-button")).click();
-    driver.findElement(By.id("exampleModal")).click();
+    Thread.sleep(500);
+    driver.findElement(By.xpath("//div[@id='exampleModal']/div/div/div/button/span")).click();
+    driver.findElement(By.xpath("//html")).click();
   }
 
   @AfterClass(alwaysRun = true)
@@ -87,4 +89,5 @@ public class Modal {
     }
   }
 }
+
 

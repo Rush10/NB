@@ -1,6 +1,8 @@
 package tugas.selenium.formy;
 
 import java.util.regex.Pattern;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
 
@@ -16,11 +18,13 @@ public class FileUpload {
   private String baseUrl;
   private boolean acceptNextAlert = true;
   private StringBuffer verificationErrors = new StringBuffer();
+  private Robot robot; 
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
 	WebDriverManager.firefoxdriver().setup();
-    driver = new FirefoxDriver();
+	driver = new FirefoxDriver();
+	robot = new Robot();
     baseUrl = "https://www.google.com/";
 //    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
@@ -28,19 +32,22 @@ public class FileUpload {
   @Test
   public void testFileUpload() throws Exception {
     driver.get("https://formy-project.herokuapp.com/fileupload");
+    
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Complete Web Form'])[1]/following::h1[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Complete Web Form'])[1]/following::h1[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::div[2]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("//input[@type='file']")).clear();
-    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\Untitled.png");
-    driver.findElement(By.xpath("//*/text()[normalize-space(.)='']/parent::*")).click();
+    robot.setAutoDelay(1000);
+    robot.keyPress(KeyEvent.VK_TAB);
+    robot.keyPress(KeyEvent.VK_TAB);
+    robot.keyPress(KeyEvent.VK_TAB);   
+    robot.keyPress(KeyEvent.VK_ENTER);
+    robot.setAutoDelay(1000);
+    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\Users\\ROG\\Downloads\\Nexsoft Bootcamp\\a.png");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
+    Thread.sleep(1000);
+    robot.keyPress(KeyEvent.VK_ENTER);			
+    Thread.sleep(1000);
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("//input[@type='file']")).clear();
-    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\Untitled.png");
-    driver.findElement(By.xpath("//*/text()[normalize-space(.)='']/parent::*")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
+    Thread.sleep(1000);
   }
 
   @AfterClass(alwaysRun = true)
@@ -85,4 +92,5 @@ public class FileUpload {
     }
   }
 }
+
 

@@ -30,14 +30,19 @@ public class SwitchWindow {
     driver.get("https://formy-project.herokuapp.com/switch-window");
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Complete Web Form'])[1]/following::h1[1]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Complete Web Form'])[1]/following::h1[1]")).click();
+    Thread.sleep(500);
     driver.findElement(By.id("alert-button")).click();
+    Thread.sleep(1000);
     assertEquals(closeAlertAndGetItsText(), "This is a test alert!");
+    Thread.sleep(500);
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Switch Window'])[2]/following::div[2]")).click();
+    Thread.sleep(500);
     driver.findElement(By.id("new-tab-button")).click();
+    Thread.sleep(1000);
     // ERROR: Caught exception [ERROR: Unsupported command [selectWindow | win_ser_1 | ]]
-    driver.close();
+//    driver.close();
     // ERROR: Caught exception [ERROR: Unsupported command [selectWindow | win_ser_local | ]]
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Switch Window'])[2]/following::form[1]")).click();
+//    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Switch Window'])[2]/following::form[1]")).click();
   }
 
   @AfterClass(alwaysRun = true)
