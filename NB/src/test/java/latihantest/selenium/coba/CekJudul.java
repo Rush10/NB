@@ -1,4 +1,4 @@
-package latihantest.selenium;
+package latihantest.selenium.coba;
 
 import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.WebDriver;

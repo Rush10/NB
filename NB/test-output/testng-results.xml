@@ -1,77 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-15T15:48:00 ICT" name="Default suite" finished-at="2022-09-15T15:48:32 ICT" duration-ms="32682">
+  <suite started-at="2022-09-16T12:01:52 ICT" name="Default suite" finished-at="2022-09-16T12:02:13 ICT" duration-ms="21130">
     <groups>
     </groups>
-    <test started-at="2022-09-15T15:48:00 ICT" name="Default test" finished-at="2022-09-15T15:48:32 ICT" duration-ms="32682">
+    <test started-at="2022-09-16T12:01:52 ICT" name="Default test" finished-at="2022-09-16T12:02:13 ICT" duration-ms="21130">
       <class name="latihantest.selenium.pagefactoryobject.TestLogin">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:latihantest.selenium.pagefactoryobject.TestLogin@6bd61f98]" started-at="2022-09-15T15:48:00 ICT" name="setUp" finished-at="2022-09-15T15:48:00 ICT" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:latihantest.selenium.pagefactoryobject.TestLogin@5f049ea1]" started-at="2022-09-16T12:01:52 ICT" name="setUp" finished-at="2022-09-16T12:01:52 ICT" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:latihantest.selenium.pagefactoryobject.TestLogin@6bd61f98]" started-at="2022-09-15T15:48:00 ICT" name="pageObject" finished-at="2022-09-15T15:48:11 ICT" duration-ms="11885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageObject -->
-        <test-method signature="testValidLogin()[pri:0, instance:latihantest.selenium.pagefactoryobject.TestLogin@6bd61f98]" started-at="2022-09-15T15:48:11 ICT" name="testValidLogin" finished-at="2022-09-15T15:48:17 ICT" duration-ms="5960" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:latihantest.selenium.pagefactoryobject.TestLogin@6bd61f98]" started-at="2022-09-15T15:48:17 ICT" name="pageObject" finished-at="2022-09-15T15:48:19 ICT" duration-ms="1522" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageObject -->
-        <test-method signature="testValidLoginUsernameCapital()[pri:0, instance:latihantest.selenium.pagefactoryobject.TestLogin@6bd61f98]" started-at="2022-09-15T15:48:19 ICT" name="testValidLoginUsernameCapital" finished-at="2022-09-15T15:48:29 ICT" duration-ms="10033" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:latihantest.selenium.pagefactoryobject.TestLogin@5f049ea1]" started-at="2022-09-16T12:01:52 ICT" name="pageObject" finished-at="2022-09-16T12:02:13 ICT" duration-ms="21079" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Username']"}
-  (Session info: chrome=105.0.5195.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-26B5BFK', ip: '10.0.0.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 981dd9861ebff122c150aa1a70357a8f
-*** Element info: {Using=xpath, value=//input[@placeholder='Username']}]]>
+              <![CDATA['void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)']]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Username']"}
-  (Session info: chrome=105.0.5195.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-26B5BFK', ip: '10.0.0.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 981dd9861ebff122c150aa1a70357a8f
-*** Element info: {Using=xpath, value=//input[@placeholder='Username']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-at latihan.selenium.pagefactoryobject.pages.LoginPage.login(LoginPage.java:34)
-at latihantest.selenium.pagefactoryobject.TestLogin.testValidLoginUsernameCapital(TestLogin.java:49)
+              <![CDATA[java.lang.NoSuchMethodError: 'void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)'
+at latihan.selenium.pagefactoryobject.pages.LoginPage.<init>(LoginPage.java:15)
+at latihantest.selenium.pagefactoryobject.TestLogin.pageObject(TestLogin.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
@@ -96,11 +54,58 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLoginUsernameCapital -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:latihantest.selenium.pagefactoryobject.TestLogin@6bd61f98]" started-at="2022-09-15T15:48:29 ICT" name="closeBrowser" finished-at="2022-09-15T15:48:32 ICT" duration-ms="3216" status="PASS">
+        </test-method> <!-- pageObject -->
+        <test-method signature="testValidLogin()[pri:0, instance:latihantest.selenium.pagefactoryobject.TestLogin@5f049ea1]" started-at="2022-09-16T12:02:13 ICT" name="testValidLogin" finished-at="2022-09-16T12:02:13 ICT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)'
+at latihan.selenium.pagefactoryobject.pages.LoginPage.<init>(LoginPage.java:15)
+at latihantest.selenium.pagefactoryobject.TestLogin.pageObject(TestLogin.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:latihantest.selenium.pagefactoryobject.TestLogin@5f049ea1]" started-at="2022-09-16T12:02:13 ICT" name="closeBrowser" finished-at="2022-09-16T12:02:13 ICT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

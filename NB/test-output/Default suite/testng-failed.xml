@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="pageObject"/>
-          <include name="testValidLoginUsernameCapital"/>
+          <include name="testValidLogin"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- latihantest.selenium.pagefactoryobject.TestLogin -->

@@ -28,7 +28,8 @@ public class TextBox {
   @Test
   public void testTextBox() throws Exception {
     driver.get("https://demoqa.com/text-box");
-    driver.findElement(By.id("submit")).click();
+//    driver.findElement(By.id("submit")).click();
+    Thread.sleep(2000);
     driver.findElement(By.id("userName-label")).click();
     driver.findElement(By.id("userEmail-label")).click();
     driver.findElement(By.id("currentAddress-label")).click();
