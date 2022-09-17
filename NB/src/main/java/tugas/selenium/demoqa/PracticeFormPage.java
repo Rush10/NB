@@ -14,8 +14,8 @@ import org.openqa.selenium.support.PageFactory;
 import latihan.selenium.framework.driver.connection.DriverSingleton;
 
 public class PracticeFormPage {
-private WebDriver driver;
-private Robot robot;
+	private WebDriver driver;
+	private Robot robot;
 	
 	public PracticeFormPage() {
 		this.driver = DriverSingleton.getDriver();

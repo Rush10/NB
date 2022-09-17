@@ -18,7 +18,7 @@ public class ByZipCodeCountryCode {
 	private Object [][] dDriven ;
 	private int intColumnNums;
 	private int intRowNums;
-	private int data = 0;
+	private int counter = 1;
 	
 	@BeforeTest
 	public void befTest()
@@ -64,7 +64,7 @@ public class ByZipCodeCountryCode {
 	public void testGetWeatherByZipCodeCountryCode(String zipCode, String countryCode) {
 		
 		System.out.println("============================================================");
-		System.out.println("LOG DATA " + ((this.data++)+1));
+		System.out.println("LOG DATA " + this.counter++);
 		System.out.println("============================================================");
 		String apiKey = "6ff56e0ff25375aa164403735be6def6";
 		

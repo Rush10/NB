@@ -18,7 +18,7 @@ public class ByCityNameCountryCode {
 	private Object [][] dDriven ;
 	private int intColumnNums;
 	private int intRowNums;
-	private int data = 0;
+	private int counter = 1;
 	
 	@BeforeTest
 	public void befTest()
@@ -47,7 +47,11 @@ public class ByCityNameCountryCode {
 			for(int j=0;j<intColumnNums;j++)
 			{
 				dDriven[a][j] = excelReader.getCellData(a, j);
-				System.out.println("City Name: " + dDriven[a][j]);
+				if(j == 0) {
+					System.out.println("City Name: " + dDriven[a][j]);					
+				} else {
+					System.out.println("Country Code: " + dDriven[a][j]);										
+				}
 			}
 			System.out.println("===============");
 			a++;
@@ -60,7 +64,7 @@ public class ByCityNameCountryCode {
 	public void testGetWeatherByCityNameCountryCode(String cityName, String countryCode) {
 		
 		System.out.println("============================================================");
-		System.out.println("LOG DATA " + ((this.data++)+1));
+		System.out.println("LOG DATA " + this.counter++);
 		System.out.println("============================================================");
 		String apiKey = "6ff56e0ff25375aa164403735be6def6";
 		
