@@ -1,4 +1,4 @@
-package ujian.ujiankeempat;
+package ujian.ujiankeempat.openweather;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
@@ -65,8 +65,11 @@ public class ByCityName {
 		String apiKey = "6ff56e0ff25375aa164403735be6def6";
 		
 		given().
+			param("q", cityName).
+			and().
+			param("appid", apiKey).
 		when().
-			get("/data/2.5/weather?q=" + cityName + "&appid=" + apiKey).
+			get("/data/2.5/weather").
 		then().
 			statusCode(200).log().all();
 	}

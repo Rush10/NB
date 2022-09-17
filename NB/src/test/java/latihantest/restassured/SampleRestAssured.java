@@ -110,8 +110,8 @@ public class SampleRestAssured {
 	public void testGetOneWithData() {
 		given().
 			param("first_name","Novrianto").
-//			and().
-//			param("last_name", "Sani").
+			and().
+			param("last_name", "Sani").
 		when().
 			get("/users").
 		then().

@@ -1,4 +1,4 @@
-package ujian.ujiankeempat;
+package ujian.ujiankeempat.openweather;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
@@ -11,9 +11,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import io.restassured.http.ContentType;
 import ujian.ujiankeempat.openweather.utils.ExcelReader;
 
-public class ByZipCodeCountryCode {
+public class ByCityId {
 	private ExcelReader excelReader;
 	private Object [][] dDriven ;
 	private int intColumnNums;
@@ -25,13 +26,13 @@ public class ByZipCodeCountryCode {
 	{
 		baseURI = "https://api.openweathermap.org/";
 		String excelPath = "./data/NB_Ujian_Keempat.xlsx";
-		String sheetName = "ByZipCodeCountryCode";
+		String sheetName = "ByCityId";
 		excelReader = new ExcelReader(excelPath, sheetName);
 		intRowNums = excelReader.getRowCount();
 		intColumnNums = excelReader.getColCount();
 	}
 	
-	@DataProvider(name = "DataProviderZipCodeCountryCode")
+	@DataProvider(name = "DataProviderCityId")
 	public Object[][] dataDriven()
 	{
 		
@@ -47,11 +48,7 @@ public class ByZipCodeCountryCode {
 			for(int j=0;j<intColumnNums;j++)
 			{
 				dDriven[a][j] = excelReader.getCellData(a, j);
-				if(j == 0) {
-					System.out.println("Zip Code: " + dDriven[a][j]);					
-				} else {
-					System.out.println("Country Code: " + dDriven[a][j]);										
-				}
+				System.out.println("City Id: " + dDriven[a][j]);
 			}
 			System.out.println("===============");
 			a++;
@@ -60,8 +57,8 @@ public class ByZipCodeCountryCode {
 		return dDriven;		
 	}
 	
-	@Test(priority = 0,dataProvider="DataProviderZipCodeCountryCode")
-	public void testGetWeatherByZipCodeCountryCode(String zipCode, String countryCode) {
+	@Test(priority = 0,dataProvider="DataProviderCityId")
+	public void testGetWeatherByCityId(String cityId) {
 		
 		System.out.println("============================================================");
 		System.out.println("LOG DATA " + ((this.data++)+1));
@@ -69,9 +66,13 @@ public class ByZipCodeCountryCode {
 		String apiKey = "6ff56e0ff25375aa164403735be6def6";
 		
 		given().
+			param("id", cityId).
+			and().
+			param("appid", apiKey).
 		when().
-			get("/data/2.5/weather?zip=" + zipCode + "," + countryCode + "&appid=" + apiKey).
+			get("/data/2.5/weather").
 		then().
 			statusCode(200).log().all();
 	}
+	
 }

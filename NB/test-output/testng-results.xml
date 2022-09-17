@@ -1,37 +1,332 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-17T14:37:56 ICT" name="Default suite" finished-at="2022-09-17T14:37:56 ICT" duration-ms="36">
+  <suite started-at="2022-09-17T20:52:42 ICT" name="Default suite" finished-at="2022-09-17T20:52:50 ICT" duration-ms="7984">
     <groups>
     </groups>
-    <test started-at="2022-09-17T14:37:56 ICT" name="Default test" finished-at="2022-09-17T14:37:56 ICT" duration-ms="36">
-      <class name="ujian.ujiankedua.GeometriTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ujian.ujiankedua.GeometriTest@7e6f74c]" started-at="2022-09-17T14:37:56 ICT" name="beforeTest" finished-at="2022-09-17T14:37:56 ICT" duration-ms="7" status="PASS">
+    <test started-at="2022-09-17T20:52:42 ICT" name="Default test" finished-at="2022-09-17T20:52:50 ICT" duration-ms="7984">
+      <class name="ujian.ujiankeempat.openweather.ByLatLonLang">
+        <test-method is-config="true" signature="befTest()[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:42 ICT" name="befTest" finished-at="2022-09-17T20:52:43 ICT" duration-ms="998" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ujian.ujiankedua.GeometriTest@7e6f74c]" started-at="2022-09-17T14:37:56 ICT" name="beforeClass" finished-at="2022-09-17T14:37:56 ICT" duration-ms="1" status="PASS">
+        </test-method> <!-- befTest -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:43 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:45 ICT" duration-ms="1590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[32.855129]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-90.405647]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[en]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujian.ujiankedua.GeometriTest@7e6f74c]" started-at="2022-09-17T14:37:56 ICT" name="beforeMethod" finished-at="2022-09-17T14:37:56 ICT" duration-ms="0" status="PASS">
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:45 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:45 ICT" duration-ms="344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[39.438068]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-99.265099]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[en]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testLuasPersegi()[pri:1, instance:ujian.ujiankedua.GeometriTest@7e6f74c]" started-at="2022-09-17T14:37:56 ICT" name="testLuasPersegi" finished-at="2022-09-17T14:37:56 ICT" duration-ms="4" status="PASS">
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:45 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:46 ICT" duration-ms="289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[39.056999]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-84.901337]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[en]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLuasPersegi -->
-        <test-method is-config="true" signature="aftermethod()[pri:0, instance:ujian.ujiankedua.GeometriTest@7e6f74c]" started-at="2022-09-17T14:37:56 ICT" name="aftermethod" finished-at="2022-09-17T14:37:56 ICT" duration-ms="1" status="PASS">
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:46 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:46 ICT" duration-ms="896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[40.59528]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-95.896667]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[en]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:ujian.ujiankedua.GeometriTest@7e6f74c]" started-at="2022-09-17T14:37:56 ICT" name="afterTest" finished-at="2022-09-17T14:37:56 ICT" duration-ms="0" status="PASS">
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:46 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:47 ICT" duration-ms="408" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[43.03923]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-76.3041]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[en]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- ujian.ujiankedua.GeometriTest -->
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:47 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:47 ICT" duration-ms="358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[35.689499]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[139.691711]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[en]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:47 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:48 ICT" duration-ms="439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[34.396271]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[132.459366]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[en]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:48 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:48 ICT" duration-ms="240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[35.021069]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[135.753845]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:48 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:48 ICT" duration-ms="514" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[43.06451]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[141.346603]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:48 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:49 ICT" duration-ms="360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[55.75222]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[37.615555]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:49 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:49 ICT" duration-ms="299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-6.21462]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[106.845131]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:49 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:49 ICT" duration-ms="269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-5.14]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[119.422096]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:49 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:50 ICT" duration-ms="275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-7.78278]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[110.360832]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:50 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:50 ICT" duration-ms="317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-7.24917]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[112.750832]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+        <test-method signature="testGetWeatherByLatLonLang(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ujian.ujiankeempat.openweather.ByLatLonLang@6a78afa0]" started-at="2022-09-17T20:52:50 ICT" name="testGetWeatherByLatLonLang" data-provider="DataProviderLatLonLang" finished-at="2022-09-17T20:52:50 ICT" duration-ms="320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-2.53333]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[140.699997]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWeatherByLatLonLang -->
+      </class> <!-- ujian.ujiankeempat.openweather.ByLatLonLang -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

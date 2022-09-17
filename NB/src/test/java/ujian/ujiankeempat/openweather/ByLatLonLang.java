@@ -1,4 +1,4 @@
-package ujian.ujiankeempat;
+package ujian.ujiankeempat.openweather;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import ujian.ujiankeempat.openweather.utils.ExcelReader;
 
-public class ByLatLon {
+public class ByLatLonLang {
 	private ExcelReader excelReader;
 	private Object [][] dDriven ;
 	private int intColumnNums;
@@ -25,13 +25,13 @@ public class ByLatLon {
 	{
 		baseURI = "https://api.openweathermap.org/";
 		String excelPath = "./data/NB_Ujian_Keempat.xlsx";
-		String sheetName = "ByLatLon";
+		String sheetName = "ByLatLonLang";
 		excelReader = new ExcelReader(excelPath, sheetName);
 		intRowNums = excelReader.getRowCount();
 		intColumnNums = excelReader.getColCount();
 	}
 	
-	@DataProvider(name = "DataProviderLatLon")
+	@DataProvider(name = "DataProviderLatLonLang")
 	public Object[][] dataDriven()
 	{
 		
@@ -49,8 +49,10 @@ public class ByLatLon {
 				dDriven[a][j] = excelReader.getCellData(a, j);
 				if(j == 0) {
 					System.out.println("Latitude: " + dDriven[a][j]);					
+				} else if(j == 1) {
+					System.out.println("Longitude: " + dDriven[a][j]);					
 				} else {
-					System.out.println("Longitude: " + dDriven[a][j]);										
+					System.out.println("Language: " + dDriven[a][j]);										
 				}
 			}
 			System.out.println("===============");
@@ -60,17 +62,23 @@ public class ByLatLon {
 		return dDriven;		
 	}
 	
-	@Test(priority = 0,dataProvider="DataProviderLatLon")
-	public void testGetWeatherByLatLon(String lat, String lon) {
-		
+	@Test(priority = 0,dataProvider="DataProviderLatLonLang")
+	public void testGetWeatherByLatLonLang(String lat, String lon, String lang) {
 		System.out.println("============================================================");
 		System.out.println("LOG DATA " + ((this.data++)+1));
 		System.out.println("============================================================");
 		String apiKey = "6ff56e0ff25375aa164403735be6def6";
 		
 		given().
+			param("lat", lat).
+			and().
+			param("lon", lon).
+			and().
+			param("lang", lang).
+			and().
+			param("appid", apiKey).
 		when().
-			get("/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey).
+			get("/data/2.5/weather").
 		then().
 			statusCode(200).log().all();
 	}

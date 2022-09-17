@@ -1,4 +1,4 @@
-package ujian.ujiankeempat;
+package ujian.ujiankeempat.openweather;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import ujian.ujiankeempat.openweather.utils.ExcelReader;
 
-public class ByLatLonLang {
+public class ByCityNameCountryCode {
 	private ExcelReader excelReader;
 	private Object [][] dDriven ;
 	private int intColumnNums;
@@ -25,13 +25,13 @@ public class ByLatLonLang {
 	{
 		baseURI = "https://api.openweathermap.org/";
 		String excelPath = "./data/NB_Ujian_Keempat.xlsx";
-		String sheetName = "ByLatLonLang";
+		String sheetName = "ByCityNameCountryCode";
 		excelReader = new ExcelReader(excelPath, sheetName);
 		intRowNums = excelReader.getRowCount();
 		intColumnNums = excelReader.getColCount();
 	}
 	
-	@DataProvider(name = "DataProviderLatLonLang")
+	@DataProvider(name = "DataProviderCityNameCountryCode")
 	public Object[][] dataDriven()
 	{
 		
@@ -47,13 +47,7 @@ public class ByLatLonLang {
 			for(int j=0;j<intColumnNums;j++)
 			{
 				dDriven[a][j] = excelReader.getCellData(a, j);
-				if(j == 0) {
-					System.out.println("Latitude: " + dDriven[a][j]);					
-				} else if(j == 1) {
-					System.out.println("Longitude: " + dDriven[a][j]);					
-				} else {
-					System.out.println("Language: " + dDriven[a][j]);										
-				}
+				System.out.println("City Name: " + dDriven[a][j]);
 			}
 			System.out.println("===============");
 			a++;
@@ -62,16 +56,20 @@ public class ByLatLonLang {
 		return dDriven;		
 	}
 	
-	@Test(priority = 0,dataProvider="DataProviderLatLonLang")
-	public void testGetWeatherByLatLonLang(String lat, String lon, String lang) {
+	@Test(priority = 0,dataProvider="DataProviderCityNameCountryCode")
+	public void testGetWeatherByCityNameCountryCode(String cityName, String countryCode) {
+		
 		System.out.println("============================================================");
 		System.out.println("LOG DATA " + ((this.data++)+1));
 		System.out.println("============================================================");
 		String apiKey = "6ff56e0ff25375aa164403735be6def6";
 		
 		given().
+			param("q", cityName + "," + countryCode).
+			and().
+			param("appid", apiKey).
 		when().
-			get("/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&lang=" + lang + "&appid=" + apiKey).
+			get("/data/2.5/weather").
 		then().
 			statusCode(200).log().all();
 	}
