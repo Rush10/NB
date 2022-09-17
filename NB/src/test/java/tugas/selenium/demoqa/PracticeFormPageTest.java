@@ -49,7 +49,7 @@ public class PracticeFormPageTest {
 		
 		//pastikan mengganti path dibawah ini
 		//masukkan disini path yang ada filenya
-		String path = "C:\\Users\\Nexsoft\\Desktop\\a.png";   
+		String path = "C:\\Users\\ROG\\Downloads\\Nexsoft Bootcamp\\a.png";   
 		
 		practiceFormPage.formPractice(fn,ln,email,gender,phone,bdate,subject,path,address);
 	}

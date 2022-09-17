@@ -1,4 +1,4 @@
-package ujiantest.kedua;
+package ujian.ujiankedua;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
