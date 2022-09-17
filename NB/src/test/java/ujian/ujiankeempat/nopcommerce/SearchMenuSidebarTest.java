@@ -35,7 +35,7 @@ public class SearchMenuSidebarTest {
 		DriverSingleton.closeObjectInstance();
 	}
 	
-//	Positive Case
+//	Positive Case (Scenario 5)
 	@Test(priority = 0)
 	public void testValidSearchMenu() throws InterruptedException {
 		driver.get(Constants.URL_LOGIN_NOP_COMMERCE);

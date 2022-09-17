@@ -39,7 +39,7 @@ public class LoginPageTest {
 		Thread.sleep(1000);
 	}
 	
-//	Positive Case
+//	Positive Case (Scenario 1)
 	@Test(priority = 0)
 	public void testValidLogin() {
 		String email = "admin@yourstore.com";
@@ -57,7 +57,7 @@ public class LoginPageTest {
 		System.out.println("=======================================");
 	}
 	
-//	Positive Case
+//	Positive Case (Scenario 2)
 	@Test(priority = 1)
 	public void testValidLoginUpperCase() {
 		String email = "ADMIN@YOURSTORE.COM";
@@ -75,7 +75,7 @@ public class LoginPageTest {
 		System.out.println("=======================================");
 	}
 	
-//	Negative Case
+//	Negative Case (Scenario 3)
 	@Test(priority = 2)
 	public void testInvalidLoginEmail() {
 		String email = "admin@yourstore.co";
@@ -93,7 +93,7 @@ public class LoginPageTest {
 		System.out.println("=======================================");
 	}
 	
-//	Negative Case
+//	Negative Case (Scenario 4)
 	@Test(priority = 3)
 	public void testInvalidLoginPass() {
 		String email = "admin@yourstore.com";
