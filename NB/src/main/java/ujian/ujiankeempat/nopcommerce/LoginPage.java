@@ -46,6 +46,13 @@ public class LoginPage {
 	public String getTxtProfile() {
 		String txt;
 		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		txt = txtProfile.getText();
 		System.out.println("Text Actual  : " + txt);
 		
@@ -54,6 +61,13 @@ public class LoginPage {
 	
 	public String getTxtErr() {
 		String txt;
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		txt = txtErr.getText();
 		System.out.println("Text Actual  : " + txt);

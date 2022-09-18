@@ -31,7 +31,12 @@ private WebDriver driver;
 	
 	public String getTxtMenu() {
 		String txt;
-		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		txt = txtMenu.getText();
 		System.out.println("Text Actual  : " + txt);
 		

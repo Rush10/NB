@@ -3,9 +3,9 @@
 <suite name="UjianDuaSuite">
   <test thread-count="5" name="UjianDuaTest">
     <classes>
-      <class name="ujiantest.kedua.GeometriTest"/>
-      <class name="ujiantest.kedua.MatematikaTest"/>
-      <class name="ujiantest.kedua.StringToNumericTest"/>
+      <class name="ujian.ujiankedua.GeometriTest"/>
+      <class name="ujian.ujiankedua.MatematikaTest"/>
+      <class name="ujian.ujiankedua.StringToNumericTest"/>
     </classes>
   </test> <!-- UjianDuaTest -->
 </suite> <!-- UjianDuaSuite -->
