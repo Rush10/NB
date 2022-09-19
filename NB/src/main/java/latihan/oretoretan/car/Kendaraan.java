@@ -1,4 +1,4 @@
-package latihan.oretoretan;
+package latihan.oretoretan.car;
 
 public class Kendaraan{
 

@@ -11,6 +11,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 public class Utils {
+	
+	public static int testCount = 0;
+	public static int countOutline = 1;
 
 	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());

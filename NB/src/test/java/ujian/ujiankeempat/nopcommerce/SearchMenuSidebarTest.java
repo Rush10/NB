@@ -44,12 +44,11 @@ public class SearchMenuSidebarTest {
 		String txt = "SALES SUMMARY";
 		
 		searchMenuSidebar.searchMenu(txt);
-		Thread.sleep(2000);
 		
 		System.out.println("=======================================");
 		System.out.println("TEST SEARCH MENU VALID");
 		System.out.println("Search Menu: " + txt);
-		assertEquals(searchMenuSidebar.getTxtMenu(), txt);
+		assertEquals(searchMenuSidebar.getTxtMenu(10), txt);
 		System.out.println("Text Expected: " + txt);
 		System.out.println("=======================================");
 	}

@@ -1,8 +1,8 @@
-package latihan.percabangan;
+package tugas.charm;
 
 import java.util.Scanner;
 
-public class PercabanganTiga {
+public class CharM {
 	//bugs
 	//	(1). m > 20 tidak memberikan informasi lebih detail. Sehingga membuat pembaca dapat berasumsi 
 	//	     jika mereka memasukkan angka lebih dari 20 atau kurang dari sama dengan 20 maka akan masuk ke pernyataan

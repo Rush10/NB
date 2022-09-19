@@ -1,4 +1,4 @@
-package latihan.oretoretan;
+package tugas.finalchar;
 
 //QUESTION:
 //INPUT STRING DATA (SCANNER)

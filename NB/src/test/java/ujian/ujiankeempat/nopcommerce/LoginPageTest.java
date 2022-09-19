@@ -47,12 +47,13 @@ public class LoginPageTest {
 		String txt = "John Smith";
 		
 		loginPage.login(email,pass);
+		loginPage.clickBtnLogin();
 		
 		System.out.println("=======================================");
 		System.out.println("TEST VALID LOGIN");
 		System.out.println("Email: " + email);
 		System.out.println("Pass : " + pass);
-		assertEquals(loginPage.getTxtProfile(), txt);
+		assertEquals(loginPage.getTxtProfile(10), txt);
 		System.out.println("Text Expected: " + txt);
 		System.out.println("=======================================");
 	}
@@ -65,12 +66,13 @@ public class LoginPageTest {
 		String txt = "John Smith";
 		
 		loginPage.login(email,pass);
+		loginPage.clickBtnLogin();
 		
 		System.out.println("=======================================");
 		System.out.println("TEST VALID LOGIN UPPERCASE");
 		System.out.println("Email: " + email);
 		System.out.println("Pass : " + pass);		
-		assertEquals(loginPage.getTxtProfile(), txt);
+		assertEquals(loginPage.getTxtProfile(10), txt);
 		System.out.println("Text Expected: " + txt);
 		System.out.println("=======================================");
 	}
@@ -80,15 +82,16 @@ public class LoginPageTest {
 	public void testInvalidLoginEmail() {
 		String email = "admin@yourstore.co";
 		String pass = "admin";
-		String txt = "Login was unsuccessful. Please correct the errors and try again.";
+		String txt = "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found";
 		
 		loginPage.login(email,pass);
+		loginPage.clickBtnLogin();
 		
 		System.out.println("=======================================");
 		System.out.println("TEST INVALID LOGIN EMAIL");
 		System.out.println("Email: " + email);
 		System.out.println("Pass : " + pass);
-		assertTrue(loginPage.getTxtErr().contains(txt));
+		assertEquals(loginPage.getTxtErr(10), txt);
 		System.out.println("Text Expected: " + txt);
 		System.out.println("=======================================");
 	}
@@ -98,15 +101,16 @@ public class LoginPageTest {
 	public void testInvalidLoginPass() {
 		String email = "admin@yourstore.com";
 		String pass = "admi";
-		String txt = "Login was unsuccessful. Please correct the errors and try again.";
+		String txt = "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect";
 		
 		loginPage.login(email,pass);
+		loginPage.clickBtnLogin();
 		
 		System.out.println("=======================================");
 		System.out.println("TEST INVALID LOGIN PASSWORD");
 		System.out.println("Email: " + email);
 		System.out.println("Pass : " + pass);
-		assertTrue(loginPage.getTxtErr().contains(txt));
+		assertEquals(loginPage.getTxtErr(10), txt);
 		System.out.println("Text Expected: " + txt);
 		System.out.println("=======================================");
 	}

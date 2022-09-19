@@ -1,8 +1,8 @@
-package latihan.percabangan;
+package tugas.intx;
 
 import java.util.Scanner;
 
-public class PercabanganDua {
+public class IntX {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int x = 0;

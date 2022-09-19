@@ -1,10 +1,13 @@
 package ujian.ujiankeempat.nopcommerce;
 
-import org.openqa.selenium.By;
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import latihan.selenium.framework.driver.connection.DriverSingleton;
 
@@ -32,6 +35,10 @@ public class LoginPage {
 	@FindBy(xpath = "//div[@class='message-error validation-summary-errors']")
 	private WebElement txtErr;
 	
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]")
+	private WebElement txtErr2;
+	//div[@class='message-error validation-summary-errors']
+	
 //	Page Object
 	public void login(String email, String pass) {
 		this.email.clear();
@@ -39,37 +46,23 @@ public class LoginPage {
 		
 		this.email.sendKeys(email);
 		this.password.sendKeys(pass);
-		
+	}
+	
+	public void clickBtnLogin() {
 		btnSubmit.click();
 	}
 	
-	public String getTxtProfile() {
-		String txt;
-		
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		txt = txtProfile.getText();
+	public String getTxtProfile(int delay) {
+		String txt = new WebDriverWait(driver, Duration.ofSeconds(delay))
+				.until(ExpectedConditions.visibilityOf(txtProfile)).getText();
 		System.out.println("Text Actual  : " + txt);
 		
 		return txt;
 	}
 	
-	public String getTxtErr() {
-		String txt;
-		
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		txt = txtErr.getText();
+	public String getTxtErr(int delay) {
+		String txt = new WebDriverWait(driver, Duration.ofSeconds(delay))
+				.until(ExpectedConditions.visibilityOf(txtErr2)).getText();
 		System.out.println("Text Actual  : " + txt);
 		
 		return txt;

@@ -1,4 +1,4 @@
-package latihan.oretoretan;
+package latihan.oretoretan.cobaoop;
 
 public class ShoopingActivity {
 

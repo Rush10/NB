@@ -2,7 +2,7 @@ package latihan.percabangan;
 
 import java.util.Scanner;
 
-public class PercabanganSatu {
+public class LatPercabangan {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		boolean isLapar = true;

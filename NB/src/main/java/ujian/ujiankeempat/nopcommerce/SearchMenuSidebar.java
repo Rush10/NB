@@ -1,9 +1,13 @@
 package ujian.ujiankeempat.nopcommerce;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import latihan.selenium.framework.driver.connection.DriverSingleton;
 
@@ -25,19 +29,14 @@ private WebDriver driver;
 //	Page Object
 	public void searchMenu(String product) throws InterruptedException {
 		this.searchMenu.click();
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		this.searchMenu.sendKeys(product);
 	}
 	
-	public String getTxtMenu() {
-		String txt;
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		txt = txtMenu.getText();
+	public String getTxtMenu(int delay) {
+		String txt = new WebDriverWait(driver, Duration.ofSeconds(delay))
+				.until(ExpectedConditions.visibilityOf(txtMenu)).getText();
+		
 		System.out.println("Text Actual  : " + txt);
 		
 		return txt;

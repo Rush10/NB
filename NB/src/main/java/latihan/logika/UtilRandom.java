@@ -16,7 +16,7 @@ public class UtilRandom {
 		int high = sc.nextInt();
 		
 		for (int i = 0; i < n; i++) {
-			System.out.println("Nilai random ke-" +i+ " yaitu " + randomValue.nextInt(low,high-1));
+			System.out.println("Nilai random ke-" +i+ " yaitu " + randomValue.nextInt(low,high+1));
 		}
 	}
 }
