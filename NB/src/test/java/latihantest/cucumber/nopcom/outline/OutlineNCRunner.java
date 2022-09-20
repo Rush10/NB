@@ -1,4 +1,4 @@
-package latihantest.cucumber.hrms.outline;
+package latihantest.cucumber.nopcom.outline;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -15,6 +15,6 @@ plugin = {"pretty","html:target/hrms/htmlreport/LoginRunnerOutline.html",
 		"json:target/hrms/jsonreport/LoginRunnerOutline.json",
 		"junit:target/hrms/junitreport/LoginRunnerOutline.xml"})
 
-public class OutlineRunner extends AbstractTestNGCucumberTests{
+public class OutlineNCRunner extends AbstractTestNGCucumberTests{
 
 }

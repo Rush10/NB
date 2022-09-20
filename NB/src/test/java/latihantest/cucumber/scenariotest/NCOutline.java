@@ -1,12 +1,12 @@
 package latihantest.cucumber.scenariotest;
 
-public enum NopComLogin {
-	T2("User valid logins"),
-	T1("User invalid logins");
+public enum NCOutline {
+	T1("User invalid login");
+//	T2("User valid login");
 	
 	private String testName;
 	
-	private NopComLogin(String value) {
+	private NCOutline(String value) {
 		testName = value;
 	}
 	

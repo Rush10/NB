@@ -1,4 +1,4 @@
-package latihantest.cucumber.nopcom;
+package latihantest.cucumber.nopcom.outline;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import latihan.selenium.framework.driver.connection.DriverSingleton;
 import latihan.selenium.framework.utils.Constants;
-import latihantest.cucumber.scenariotest.NopComLogin;
+import latihantest.cucumber.scenariotest.HRMSOutline;
 import latihan.selenium.framework.utils.Utils;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
@@ -19,24 +19,33 @@ import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-public class LoginHooks {
+public class OutlineNCHooks {
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
-	public static ExtentReports reports = new ExtentReports("target/nopcom/extentreport/nopcom-login.html");
-
+	public static ExtentReports reports = new ExtentReports("target/hrms/extentreport/hrms-login-outline-xr.html");
+	private static HRMSOutline[] tests = HRMSOutline.values();
+	private static final int[] DATA_OUTLINE = {6,6,1,1};
+	private String testReport = "";
+	
 	@Before
 	public void setUp() {
+		
 		DriverSingleton.getInstance(Constants.CHROME);
 		driver = DriverSingleton.getDriver();
-		NopComLogin[] tests = NopComLogin.values();
-		extentTest = reports.startTest(tests[Utils.testCount].getTestName());
-		Utils.testCount++;
+		testReport = tests[Utils.testCount].getTestName();
+		extentTest = reports.startTest(testReport);
+		Utils.countOutline++;
+		if(Utils.countOutline==DATA_OUTLINE[Utils.testCount])
+		{
+			Utils.countOutline=1;
+			Utils.testCount++;
+		}
 	}
 	
 	@AfterStep
 	public void getResultStatus(Scenario scenario) throws IOException {
 		if(scenario.isFailed()) {
-			String screenshotPath = Utils.getScreenshot(driver, "NopCom_Login"+scenario.getName().replace(" ", "_"));
+			String screenshotPath = Utils.getScreenshot(driver, "HRMS_OutlineHooks"+scenario.getName().replace(" ", "_"));
 			extentTest.log(LogStatus.FAIL, scenario.getName()+"\n"
 					+extentTest.addScreenCapture(screenshotPath));;
 		}
@@ -49,6 +58,8 @@ public class LoginHooks {
 	}
 	
 	
+	
+//	@AfterTest
 	@AfterAll
 	public static void closeBrowser() {
 		delay(2);

@@ -1,4 +1,4 @@
-package latihantest.cucumber.nopcom;
+package latihantest.cucumber.nopcom.basic;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -9,8 +9,8 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import latihan.selenium.framework.utils.Constants;
+import latihantest.cucumber.nopcom.basic.LoginHooks;
 import ujian.ujiankeempat.nopcommerce.LoginPage;
-import latihantest.cucumber.nopcom.LoginHooks;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 

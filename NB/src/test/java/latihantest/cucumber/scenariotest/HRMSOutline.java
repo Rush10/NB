@@ -3,8 +3,8 @@ package latihantest.cucumber.scenariotest;
 public enum HRMSOutline{
 	
 
-	T1("User invalid login Outlinee"),
-	T2("User invalid empty username and password Outline");
+	T1("User invalid login Out of line");
+//	T2("User invalid empty username and password Outline");
 //	T3("User valid login"),
 //	T4("Dashboard user function");
 	
