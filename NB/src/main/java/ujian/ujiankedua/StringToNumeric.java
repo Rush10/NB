@@ -1,4 +1,4 @@
-package ujian.kedua;
+package ujian.ujiankedua;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package ujian.kedua;
+package ujian.ujiankedua;
 
 public class Geometri {
 	public int luasPersegiExpect(int s){

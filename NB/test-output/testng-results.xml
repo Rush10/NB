@@ -1,63 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-20T17:40:34 ICT" name="Default suite" finished-at="2022-09-20T17:40:46 ICT" duration-ms="11963">
+  <suite started-at="2022-09-23T13:16:23 ICT" name="Default suite" finished-at="2022-09-23T13:16:23 ICT" duration-ms="93">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:latihantest.cucumber.nopcom.basic.LoginRunner@57a78e3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-20T17:40:34 ICT" name="Default test" finished-at="2022-09-20T17:40:46 ICT" duration-ms="11963">
-      <class name="latihantest.cucumber.nopcom.basic.LoginRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:latihantest.cucumber.nopcom.basic.LoginRunner@57a78e3]" started-at="2022-09-20T17:40:34 ICT" name="setUpClass" finished-at="2022-09-20T17:40:34 ICT" duration-ms="673" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2d70f312]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-09-23T13:16:23 ICT" name="Default test" finished-at="2022-09-23T13:16:23 ICT" duration-ms="93">
+      <class name="ujian.ujiankedua.GeometriTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="beforeTest" finished-at="2022-09-23T13:16:23 ICT" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:latihantest.cucumber.nopcom.basic.LoginRunner@57a78e3]" started-at="2022-09-20T17:40:34 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T17:40:39 ICT" duration-ms="5196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User invalid logins"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["LoginUserNopCom"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="beforeClass" finished-at="2022-09-23T13:16:23 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:latihantest.cucumber.nopcom.basic.LoginRunner@57a78e3]" started-at="2022-09-20T17:40:39 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T17:40:43 ICT" duration-ms="3743" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User valid logins"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["LoginUserNopCom"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="beforeMethod" finished-at="2022-09-23T13:16:23 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:latihantest.cucumber.nopcom.basic.LoginRunner@57a78e3]" started-at="2022-09-20T17:40:43 ICT" name="tearDownClass" finished-at="2022-09-20T17:40:46 ICT" duration-ms="2299" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLuasPersegi()[pri:1, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="testLuasPersegi" finished-at="2022-09-23T13:16:23 ICT" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- latihantest.cucumber.nopcom.basic.LoginRunner -->
+        </test-method> <!-- testLuasPersegi -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="aftermethod" finished-at="2022-09-23T13:16:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="beforeMethod" finished-at="2022-09-23T13:16:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLuasSegitiga()[pri:2, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="testLuasSegitiga" finished-at="2022-09-23T13:16:23 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLuasSegitiga -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="aftermethod" finished-at="2022-09-23T13:16:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method signature="testLuasTrapesium()[pri:3, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="testLuasTrapesium" finished-at="2022-09-23T13:16:23 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLuasTrapesium -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="beforeMethod" finished-at="2022-09-23T13:16:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="aftermethod" finished-at="2022-09-23T13:16:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ujian.ujiankedua.GeometriTest@712625fd]" started-at="2022-09-23T13:16:23 ICT" name="afterTest" finished-at="2022-09-23T13:16:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- ujian.ujiankedua.GeometriTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

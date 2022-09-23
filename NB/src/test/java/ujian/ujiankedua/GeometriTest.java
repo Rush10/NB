@@ -13,8 +13,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import ujian.kedua.Geometri;
-
 public class GeometriTest {
 	Geometri geo;
 	Random rand;

@@ -1,4 +1,4 @@
-package ujian.kedua;
+package ujian.ujiankedua;
 
 public class Matematika {
 	public int sumExpect(int a, int b){
