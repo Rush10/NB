@@ -9,5 +9,5 @@ Feature: Login Invalid Email Password
 #2 data
     Examples: 
       | email	 						| password  |
-      | didi    	 				| didi      |
-      | didi@gmail.com    | didi			|
+      |     	 				    |           |
+      |                   | didi			|

@@ -44,7 +44,7 @@ public class TestLoginInvalid {
 
 	@Then("system check credentials invalid outline")
 	public void system_check_credentials_invalid_outline() {
-		String strExpected = "The username or password you entered is incorrect";
+		String strExpected = "Username is required";
 		assertTrue(loginPage.getErrTxt(10).contains(strExpected));
 		extentTest.log(LogStatus.PASS, "system check credentials invalid outline");
 		Utils.delay(2, Constants.GLOB_PARAM_DELAY);

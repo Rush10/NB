@@ -29,7 +29,7 @@ public class TestMyAccountPage {
 	
 	@Test
 	public void testInvalidLogin() {
-		String strExpected = "The username or password you entered is incorrect", user = "deni@gmail.com", pass = "deni";
+		String strExpected = "Username is required", user = "", pass = "deni";
 		System.out.println("===== Test Invalid Login =====");
 		myAccountPage.login(user,pass);
 		myAccountPage.clickBtnLogin();

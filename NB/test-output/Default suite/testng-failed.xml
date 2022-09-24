@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ujian.ujiankelima.selenium.TestMyAccountPage">
+      <class name="ujian.ujiankelima.testng.ParsingStringToNumericTest">
         <methods>
-          <include name="pageObject"/>
-          <include name="testInvalidLogin"/>
-          <include name="setUp"/>
-          <include name="closeBrowser"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="testDevide"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- ujian.ujiankelima.selenium.TestMyAccountPage -->
+      </class> <!-- ujian.ujiankelima.testng.ParsingStringToNumericTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
