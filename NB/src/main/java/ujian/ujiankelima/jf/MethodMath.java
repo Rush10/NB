@@ -29,10 +29,10 @@ public class MethodMath {
 				System.out.println("Input Index AKHIR: ");
 				strLastIndex = sc.nextLine();	
 				intLastIndex = Integer.parseInt(strLastIndex);
-				if(intLastIndex >= intFirstIndex) {
+				if(intLastIndex > intFirstIndex) {
 					break;
 				} else {
-					System.out.println("Index Akhir Harus Lebih Besar Dari Atau Sama Dengan Index Awal !!");
+					System.out.println("Index Akhir Harus Lebih Besar Dari Index Awal !!");
 				}
 			} catch (NumberFormatException e) {
 				System.out.println("Index Akhir Tidak Dapat Diubah Menjadi Integer !!");
