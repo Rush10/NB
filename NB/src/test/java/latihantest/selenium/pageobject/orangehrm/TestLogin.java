@@ -23,7 +23,7 @@ public class TestLogin {
 	public void pageObject() {
 		DriverSingleton.getInstance(Constants.CHROME);
 		driver = DriverSingleton.getDriver();
-		driver.get(Constants.URL);
+		driver.get(Constants.URL_OHRM);
 		loginPage = new LoginPage();	
 	}
 	

@@ -13,8 +13,8 @@ public class GenerateDynamicData {
 		int intJumData = 0, intIndexAwal = 0, intIndexAkhir = 0; 
 		
 		intJumData = rand.nextInt(intFirstIndex,intLastIndex);
-		intIndexAwal = rand.nextInt(intFirstIndex,intLastIndex);
-		intIndexAkhir = rand.nextInt(intFirstIndex,intLastIndex);
+		intIndexAwal = rand.nextInt(1,11);
+		intIndexAkhir = rand.nextInt(11,20);
 		
 		try {
 			System.out.println("Generate Integer in String: " + generateIntegerDataInString(intJumData,intIndexAwal,intIndexAkhir));
@@ -22,7 +22,7 @@ public class GenerateDynamicData {
 			generateIntegerData(intJumData,intIndexAwal,intIndexAkhir);
 			generateDoubleData(intJumData,intIndexAwal,intIndexAkhir);
 		} catch (IllegalArgumentException e) {
-			System.out.println(e.getMessage());
+			System.out.println("Index Akhir Lebih Besar Dari Index Awal !!");
 		}
 	}
 	

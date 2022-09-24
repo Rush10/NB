@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="latihantest.cucumber.hrms.outline.OutlineRunner">
+      <class name="ujian.ujiankelima.selenium.TestMyAccountPage">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="5"/>
-          <include name="tearDownClass"/>
+          <include name="pageObject"/>
+          <include name="testInvalidLogin"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- latihantest.cucumber.hrms.outline.OutlineRunner -->
+      </class> <!-- ujian.ujiankelima.selenium.TestMyAccountPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

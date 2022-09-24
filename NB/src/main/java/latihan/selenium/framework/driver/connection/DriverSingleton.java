@@ -39,8 +39,13 @@ public class DriverSingleton {
 		return driver;
 	}
 	
-	public static void closeObjectInstance() {
+	public static void closeObjectInstance() 
+	{
         instance = null;
-        driver.quit();
+        try{
+            driver.quit();
+        } catch(NullPointerException e){
+        	System.out.println("END!!");
+        }
     }
 }
